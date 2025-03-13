@@ -1,0 +1,107 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(uuid())
+  name      String
+  email     String
+  password  String
+  phone     String?
+  birthDate DateTime?
+  createdAt DateTime  @default(now())
+
+  payments     Payment[]
+  appointments Appointment[]
+}
+
+model Plan {
+  id          String   @id @default(uuid())
+  name        String
+  price       Decimal
+  duration    Int
+  description String?
+  createdAt   DateTime @default(now())
+
+  payments Payment[]
+}
+
+model Payment {
+  id            String   @id @default(uuid())
+  userId        String
+  planId        String?
+  amount        Decimal
+  paymentDate   DateTime @default(now())
+  status        String   @default("pending") // pending, completed, failed
+  transactionId String?  @unique
+
+  user User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  plan Plan? @relation(fields: [planId], references: [id], onDelete: SetNull)
+}
+
+model Gym {
+  id           String        @id @default(uuid())
+  name         String
+  logo         String?
+  slug         String
+  address      String
+  city         String
+  state        String
+  zipCode      String
+  phone        String
+  avatarImgUrl String
+  coverImgUrl  String
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  images       GymImage[]
+  appointments Appointment[]
+}
+
+model GymImage {
+  id        String   @id @default(uuid())
+  gymId     String
+  imageUrl  String
+  createdAt DateTime @default(now())
+
+  gym Gym @relation(fields: [gymId], references: [id], onDelete: Cascade)
+}
+
+model Workout {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  duration    Int
+  createdAt   DateTime @default(now())
+
+  appointments Appointment[]
+}
+
+model Appointment {
+  id              String   @id @default(uuid())
+  userId          String
+  gymId           String
+  workoutId       String?
+  appointmentDate DateTime
+  status          String   @default("scheduled")
+  createdAt       DateTime @default(now())
+
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  gym     Gym      @relation(fields: [gymId], references: [id], onDelete: Cascade)
+  workout Workout? @relation(fields: [workoutId], references: [id], onDelete: SetNull)
+}
+
+enum PlanStatus {
+  CANCEL
+  ACTIVE
+}
