@@ -27,14 +27,13 @@ model User {
 }
 
 model Plan {
-  id          String   @id @default(uuid())
+  id          String    @id @default(uuid())
   name        String
-  price       Decimal
+  price       Float
   duration    Int
   description String?
-  createdAt   DateTime @default(now())
-
-  payments Payment[]
+  createdAt   DateTime  @default(now())
+  payments    Payment[]
 }
 
 model Payment {
@@ -45,9 +44,8 @@ model Payment {
   paymentDate   DateTime @default(now())
   status        String   @default("pending") // pending, completed, failed
   transactionId String?  @unique
-
-  user User  @relation(fields: [userId], references: [id], onDelete: Cascade)
-  plan Plan? @relation(fields: [planId], references: [id], onDelete: SetNull)
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  plan          Plan?    @relation(fields: [planId], references: [id], onDelete: SetNull)
 }
 
 model Gym {
