@@ -9,7 +9,7 @@ interface ButtonComponentProps {
 }
 const ButtonComponent = ({ href, children }: ButtonComponentProps) => {
   return (
-    <Button className="m-2 rounded-full" asChild>
+    <Button className="gap-2 rounded-full" asChild>
       <Link href={href}>{children}</Link>
     </Button>
   );
