@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const SidebarContent = () => {
   return (
-    <div className=" flex flex-col mt-8  gap-4">
+    <div className="flex flex-col mt-8  gap-4">
       <Button asChild variant="link">
         <Link className="text-lg text-black" href="/">
           Home
