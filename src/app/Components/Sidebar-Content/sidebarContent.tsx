@@ -1,9 +1,10 @@
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+
+import { Button } from "@/components/ui/button";
 
 const SidebarContent = () => {
   return (
-    <div className="flex flex-col mt-8  gap-4">
+    <div className="mt-8 flex flex-col gap-4">
       <Button asChild variant="link">
         <Link className="text-lg text-black" href="/">
           Home

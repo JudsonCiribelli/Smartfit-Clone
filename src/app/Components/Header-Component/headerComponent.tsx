@@ -1,14 +1,16 @@
 import { AlignJustify } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import ButtonComponent from "../Header-Button-Component/buttonComponent";
-import { Sheet, SheetTrigger } from "@/components/ui/sheet";
+
 import { Button } from "@/components/ui/button";
+import { Sheet, SheetTrigger } from "@/components/ui/sheet";
+
+import ButtonComponent from "../Header-Button-Component/buttonComponent";
 import SheetsContent from "../Sheets-Content-Component/sheetsContentComponent";
 
 const HeaderComponent = () => {
   return (
-    <div className="flex items-center justify-between top-0 bg-slate-100 h-32">
+    <div className="top-0 flex h-32 items-center justify-between bg-slate-100">
       <div className="ml-8">
         <Link href="/">
           <Image
@@ -21,7 +23,7 @@ const HeaderComponent = () => {
       </div>
 
       <div className="mx-8">
-        <ul className=" flex justify-between items-center gap-2">
+        <ul className="flex items-center justify-between gap-2">
           <ButtonComponent href="/">Academias</ButtonComponent>
 
           <ButtonComponent href="/">Espaço Cliente</ButtonComponent>

@@ -1,5 +1,7 @@
-import { SheetContent, SheetHeader } from "@/components/ui/sheet";
 import Image from "next/image";
+
+import { SheetContent, SheetHeader } from "@/components/ui/sheet";
+
 import SidebarContent from "../Sidebar-Content/sidebarContent";
 
 const SheetsContent = () => {
