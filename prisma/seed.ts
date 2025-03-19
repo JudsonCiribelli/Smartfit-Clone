@@ -130,6 +130,14 @@ const main = async () => {
           duration: 12,
           description:
             "Treine em qualquer academia da Smart Fit, seja no Brasil ou na América Latina. São +1.700 unidades em 15 países!",
+          additionalInfo: [
+            "Acesso ilimitado a +1.700 academias",
+            "Leve 5 amigos por mês para treinar com você",
+            "Cadeira de massagem",
+            "Smart Fit GO (treinos online no app)",
+            "Área de musculação e aeróbicos",
+            "Smart Fit App",
+          ],
         },
         {
           name: "Plano Fit",
@@ -137,6 +145,14 @@ const main = async () => {
           duration: 9,
           description:
             "Nosso plano mais econômico para você se exercitar quando e quanto quiser na academia que escolher!",
+          additionalInfo: [
+            "Acesso ilimitado a +1.700 academias",
+            "Leve 5 amigos por mês para treinar com você",
+            "Cadeira de massagem",
+            "Smart Fit GO (treinos online no app)",
+            "Área de musculação e aeróbicos",
+            "Smart Fit App",
+          ],
         },
         {
           name: "Plano Smart",
@@ -144,6 +160,14 @@ const main = async () => {
           duration: 6,
           description:
             "Nosso plano mensal para você que não quer se comprometer, mas quer treinar em uma academia de alto padrão!",
+          additionalInfo: [
+            "Acesso ilimitado a +1.700 academias",
+            "Leve 5 amigos por mês para treinar com você",
+            "Cadeira de massagem",
+            "Smart Fit GO (treinos online no app)",
+            "Área de musculação e aeróbicos",
+            "Smart Fit App",
+          ],
         },
       ],
     });
