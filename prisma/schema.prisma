@@ -27,13 +27,14 @@ model User {
 }
 
 model Plan {
-  id          String    @id @default(uuid())
-  name        String
-  price       Float
-  duration    Int
-  description String?
-  createdAt   DateTime  @default(now())
-  payments    Payment[]
+  id             String    @id @default(uuid())
+  name           String
+  price          Float
+  duration       Int
+  description    String?
+  createdAt      DateTime  @default(now())
+  additionalInfo String[]
+  payments       Payment[]
 }
 
 model Payment {
