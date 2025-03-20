@@ -45,11 +45,34 @@ const Home = async () => {
         </div>
         {/* Card com imagens */}
         <div className="m-4 flex gap-2">
-          <ExperienceCard />
+          <ExperienceCard
+            src="https://assets.smartfit.com.br/images/new_home_br/equipamentos_alto_padrao.jpeg"
+            content="Equipamentos de alto padrão"
+          />
+          <ExperienceCard
+            src="https://assets.smartfit.com.br/images/new_home_br/salas-exclusivas.jpeg"
+            content="Salas exclusivas de aulas coletivas"
+          />
+          <ExperienceCard
+            src="https://assets.smartfit.com.br/images/new_home_br/areas-musculacao.jpeg"
+            content="Áreas de musculação e cárdio"
+          />
         </div>
         <Button className="m-2 w-[13%] rounded-full p-6 text-xl">
           Buscar Academias
         </Button>
+      </section>
+      <section className="m-10 flex w-full flex-col items-center">
+        <div className="m-8 flex">
+          <h1 className="text-2xl font-bold text-black">
+            Aulas e treinos{" "}
+            <span className="text-2xl font-bold text-foreground">
+              exclusivos!
+            </span>
+          </h1>
+        </div>
+        {/* Card com imagens */}
+        <div></div>
       </section>
     </main>
   );
