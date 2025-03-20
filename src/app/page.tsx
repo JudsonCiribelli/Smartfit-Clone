@@ -25,6 +25,10 @@ const Home = async () => {
             <PlansCard plans={plan} key={plan.id} />
           ))}
         </div>
+        <h1 className="text-sm text-black">
+          Os preços, taxas e condições promocionais podem variar de acordo com a
+          academia escolhida.
+        </h1>
       </section>
     </main>
   );

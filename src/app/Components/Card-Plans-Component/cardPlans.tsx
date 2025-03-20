@@ -1,5 +1,5 @@
 import { Plan } from "@prisma/client";
-import { CircleCheck } from "lucide-react";
+import { CircleCheck, CircleX } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -16,7 +16,9 @@ interface PlansCardProps {
 }
 
 const PlansCard = ({ plans }: PlansCardProps) => {
-  console.log(plans.additionalInfo);
+  const firstThreeBenefits = plans.additionalInfo.slice(0, 3);
+  const lastThreeBenefits = plans.additionalInfo.slice(-3);
+  const isBlackPlan = plans.name === "Plano Black";
   return (
     <Card className="h-[600px] w-[350px] gap-4 border-none">
       {/* Div com as informações */}
@@ -37,14 +39,35 @@ const PlansCard = ({ plans }: PlansCardProps) => {
         </p>
         <Button className="my-6 w-full">Contratar agora</Button>
         <ul className="mt-4 space-y-2 text-white">
-          {plans.additionalInfo.map((info, index) => (
-            <li key={index} className="text-sm">
-              <div className="flex gap-4">
-                <CircleCheck size={14} />
-                {info}
-              </div>
-            </li>
-          ))}
+          {isBlackPlan ? (
+            plans.additionalInfo.map((info, index) => (
+              <li key={index} className="text-sm">
+                <div className="flex gap-4">
+                  <CircleCheck size={14} className="text-green-500" />
+                  {info}
+                </div>
+              </li>
+            ))
+          ) : (
+            <>
+              {firstThreeBenefits.map((info, index) => (
+                <li key={index} className="text-sm">
+                  <div className="flex gap-4">
+                    <CircleX size={14} className="text-red-500" />
+                    {info}
+                  </div>
+                </li>
+              ))}
+              {lastThreeBenefits.map((info, index) => (
+                <li key={index + 3} className="text-sm">
+                  <div className="flex gap-4">
+                    <CircleCheck size={14} className="text-green-500" />
+                    {info}
+                  </div>
+                </li>
+              ))}
+            </>
+          )}
         </ul>
       </CardContent>
     </Card>
