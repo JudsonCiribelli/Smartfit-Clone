@@ -179,18 +179,21 @@ const main = async () => {
           description:
             "Para você manjar de todos os passinhos, as aulas de dança da Smart Fit são ministradas por professores licenciados pelo FitDance.",
           duration: 60,
+          intensity: "Alta",
         },
         {
           name: "Smart Cross",
           description:
             "Emagrecimento com ganho de condicionamento físico em apenas 30 minutos. Esse é o Smart Cross, nosso treino funcional coletivo de alta intensidade.",
           duration: 30,
+          intensity: "Média",
         },
         {
           name: "Body Combat",
           description:
             "Karatê, Jiu-Jitsu, Capoeira, Kung Fu e Taekwondo são algumas das inspirações para a aula de BodyCombat. Esse treino trabalha todo o corpo.",
           duration: 45,
+          intensity: "Alta",
         },
       ],
     });
