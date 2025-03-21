@@ -1,12 +1,16 @@
+import { BatteryCharging, Clock } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 import { getPlans } from "@/data/get-plans";
 
 import BannersComponent from "./Components/Banners-Component/bannersComponent";
 import PlansCard from "./Components/Card-Plans-Component/cardPlans";
 import ExperienceCard from "./Components/Experience-Card-Component/experienceCard";
+import TrainingCard from "./Components/Training-Card/trainingCard";
 
 const Home = async () => {
   const plans = await getPlans();
+
   return (
     <main className="block overflow-hidden">
       <BannersComponent />
@@ -63,6 +67,7 @@ const Home = async () => {
         </Button>
       </section>
       <section className="m-10 flex w-full flex-col items-center">
+        {/* Titulo */}
         <div className="m-8 flex">
           <h1 className="text-2xl font-bold text-black">
             Aulas e treinos{" "}
@@ -71,8 +76,42 @@ const Home = async () => {
             </span>
           </h1>
         </div>
-        {/* Card com imagens */}
-        <div></div>
+        {/* Cards com imagens */}
+        <div className="m-2 flex gap-4">
+          <TrainingCard
+            src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/fitdance-cover.webp"
+            alt="FITDANCE"
+            title="FITDANCE"
+            duration="45/60"
+            intensity="Alta"
+            description="Para você manjar de todos os passinhos, as aulas de dança da Smart Fit são ministradas por professores licenciados pelo FitDance."
+            IconDuration={<Clock size={20} />}
+            IconIntensity={<BatteryCharging size={20} />}
+          />
+          <TrainingCard
+            src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/smart-cross-cover.webp"
+            alt="SMART CROSS"
+            title="SMART CROSS"
+            duration="30"
+            intensity="Alta"
+            description="Emagrecimento com ganho de condicionamento físico em apenas 30 minutos. Esse é o Smart Cross, nosso treino funcional coletivo de alta intensidade."
+            IconDuration={<Clock size={20} />}
+            IconIntensity={<BatteryCharging size={20} />}
+          />
+          <TrainingCard
+            src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/body-combat-cover.webp"
+            alt="BODY COMBAT"
+            title="BODY COMBAT"
+            duration="30/45"
+            intensity="Alta"
+            description="Karatê, Jiu-Jitsu, Capoeira, Kung Fu e Taekwondo são algumas das inspirações para a aula de BodyCombat. Esse treino trabalha todo o corpo."
+            IconDuration={<Clock size={20} />}
+            IconIntensity={<BatteryCharging size={20} />}
+          />
+        </div>
+        <Button className="my-6 w-[30%] rounded-full p-8">
+          Ver todas as aulas e treinos
+        </Button>
       </section>
     </main>
   );
