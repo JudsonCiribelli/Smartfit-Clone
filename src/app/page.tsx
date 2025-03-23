@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { getPlans } from "@/data/get-plans";
 
 import BannersComponent from "./Components/Banners-Component/bannersComponent";
+import ButtonTrainingCard from "./Components/Button-Training-Card/buttonTrainingCard";
 import PlansCard from "./Components/Card-Plans-Component/cardPlans";
 import ExperienceCard from "./Components/Experience-Card-Component/experienceCard";
 import ServicesCard from "./Components/Service-Card-Component/serviceCard";
@@ -67,6 +68,7 @@ const Home = async () => {
           Buscar Academias
         </Button>
       </section>
+
       <section className="m-10 flex w-full flex-col items-center">
         {/* Titulo */}
         <div className="m-8 flex">
@@ -110,9 +112,7 @@ const Home = async () => {
             IconIntensity={<BatteryCharging size={20} />}
           />
         </div>
-        <Button className="my-6 w-[30%] rounded-full p-8">
-          Ver todas as aulas e treinos
-        </Button>
+        <ButtonTrainingCard />
       </section>
 
       <section className="bg-#eda15a m-10 flex w-full flex-col items-center">
