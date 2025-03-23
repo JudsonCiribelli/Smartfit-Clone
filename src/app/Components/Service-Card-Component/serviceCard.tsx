@@ -10,7 +10,7 @@ interface ServiceCardProps {
   about: string;
   description: string;
   price: number;
-  permanence: number;
+  permanence?: number;
 }
 const ServicesCard = ({
   alt,
