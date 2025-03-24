@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
       "www.smartfit.com.br",
       "assets.smartfit.com.br",
       "assets3.smartfit.com.br",
+      "landing-pages-smart.s3.amazonaws.com",
     ],
   },
 };
