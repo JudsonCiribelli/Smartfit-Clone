@@ -63,11 +63,9 @@ const TrainingCard = ({
 
         {/* Botões no final do card */}
         <div className="mt-auto flex w-full justify-center gap-2">
-          <Link href={`/modalidades-treino/${alt}`}>
-            <Button variant="ghost" className="mb-8 w-[48%] text-black">
-              Saiba mais
-            </Button>
-          </Link>
+          <Button variant="ghost" className="mb-8 w-[48%] text-black" asChild>
+            <Link href={`/modalidades-treino/${alt}`}>Saiba mais</Link>
+          </Button>
         </div>
       </div>
     </Card>
