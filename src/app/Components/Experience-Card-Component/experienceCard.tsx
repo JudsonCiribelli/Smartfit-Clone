@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/app/Components/ui/card";
 interface ExperiencieCardProps {
   src: string;
   content: string;

@@ -1,7 +1,7 @@
 import { BatteryCharging, Clock } from "lucide-react";
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/Components/ui/button";
 import { FormatCurrency } from "@/helpers/format-currency";
 
 import TrainingCard from "../Components/Training-Card/trainingCard";

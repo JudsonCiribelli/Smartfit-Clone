@@ -2,8 +2,8 @@ import { AlignJustify } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetTrigger } from "@/components/ui/sheet";
+import { Button } from "@/app/Components/ui/button";
+import { Sheet, SheetTrigger } from "@/app/Components/ui/sheet";
 
 import ButtonComponent from "../Header-Button-Component/buttonComponent";
 import SheetsContent from "../Sheets-Content-Component/sheetsContentComponent";

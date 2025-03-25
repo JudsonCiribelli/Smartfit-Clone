@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/Components/ui/button";
 
 const ButtonTrainingCard = () => {
   const router = useRouter();

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { SheetContent, SheetHeader } from "@/components/ui/sheet";
+import { SheetContent, SheetHeader } from "@/app/Components/ui/sheet";
 
 import SidebarContent from "../Sidebar-Content/sidebarContent";
 

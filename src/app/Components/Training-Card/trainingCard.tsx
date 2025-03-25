@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
-import { Card, CardTitle } from "@/components/ui/card";
+import { Button } from "@/app/Components/ui/button";
+import { Card, CardTitle } from "@/app/Components/ui/card";
 
 interface TrainingCardProps {
   src: string;

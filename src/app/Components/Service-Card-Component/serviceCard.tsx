@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Button } from "@/app/Components/ui/button";
+import { Card } from "@/app/Components/ui/card";
 import { FormatCurrency } from "@/helpers/format-currency";
 interface ServiceCardProps {
   alt: string;

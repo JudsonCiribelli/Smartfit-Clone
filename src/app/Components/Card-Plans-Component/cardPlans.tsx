@@ -1,14 +1,14 @@
 import { Plan } from "@prisma/client";
 import { CircleCheck, CircleX } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/Components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@/app/Components/ui/card";
 import { FormatCurrency } from "@/helpers/format-currency";
 
 interface PlansCardProps {

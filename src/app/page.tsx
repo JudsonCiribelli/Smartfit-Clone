@@ -1,6 +1,6 @@
 import { BatteryCharging, Clock } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/app/Components/ui/button";
 import { getPlans } from "@/data/get-plans";
 
 import BannersComponent from "./Components/Banners-Component/bannersComponent";
