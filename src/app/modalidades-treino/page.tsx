@@ -97,7 +97,7 @@ const TrainingModalities = () => {
         <div className="mx-auto my-0 flex w-[100%] max-w-[1000px] flex-wrap justify-center gap-14">
           <TrainingCard
             src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/fitdance-cover.webp"
-            alt="FITDANCE"
+            alt="FIT-DANCE"
             title="FITDANCE"
             duration="45/60"
             intensity="Alta"
@@ -117,7 +117,7 @@ const TrainingModalities = () => {
           />
           <TrainingCard
             src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/body-combat-cover.webp"
-            alt="BODY COMBAT"
+            alt="BODY-COMBAT"
             title="BODY COMBAT"
             duration="30/45"
             intensity="Alta"
@@ -127,7 +127,7 @@ const TrainingModalities = () => {
           />
           <TrainingCard
             src="https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/body-balance/cover.png"
-            alt="BODY BALANCE"
+            alt="BODY-BALANCE"
             title="SMART HIIT"
             duration="30/45"
             intensity="Moderado"
@@ -137,7 +137,7 @@ const TrainingModalities = () => {
           />
           <TrainingCard
             src="https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/abdominal/cover.png"
-            alt="SMART CORE"
+            alt="SMART-CORE"
             title="SMART CORE"
             duration="30"
             intensity="Moderado"
@@ -157,7 +157,7 @@ const TrainingModalities = () => {
           />
           <TrainingCard
             src="https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/smart-fight/cover.png"
-            alt="SMART FIGHT"
+            alt="SMART-FIGHT"
             title="SMART FIGHT"
             duration="45"
             intensity="Alta"
@@ -167,7 +167,7 @@ const TrainingModalities = () => {
           />
           <TrainingCard
             src="https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/smart-bike/cover.png"
-            alt="SMART BIKE"
+            alt="SMART-BIKE"
             title="SMART BIKE"
             duration="45"
             intensity="Alta"
@@ -177,7 +177,7 @@ const TrainingModalities = () => {
           />
           <TrainingCard
             src="https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/workout-by-fitdance/cover.png"
-            alt="WORKOUT BY FITDANCE"
+            alt="WORKOUT-BY-FITDANCE"
             title="WORKOUT BY FITDANCE"
             duration="30"
             intensity="Alta"

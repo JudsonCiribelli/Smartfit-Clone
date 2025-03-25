@@ -1,3 +1,4 @@
+"use server";
 import { BatteryCharging, Clock } from "lucide-react";
 
 import { Button } from "@/app/Components/ui/button";
@@ -69,6 +70,7 @@ const Home = async () => {
         </Button>
       </section>
 
+      {/* Componente */}
       <section className="m-10 flex w-full flex-col items-center">
         {/* Titulo */}
         <div className="m-8 flex">
@@ -83,7 +85,7 @@ const Home = async () => {
         <div className="m-2 flex gap-4">
           <TrainingCard
             src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/fitdance-cover.webp"
-            alt="FITDANCE"
+            alt="FIT-DANCE"
             title="FITDANCE"
             duration="45/60"
             intensity="Alta"
@@ -93,7 +95,7 @@ const Home = async () => {
           />
           <TrainingCard
             src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/smart-cross-cover.webp"
-            alt="SMART CROSS"
+            alt="SMART-CROSS"
             title="SMART CROSS"
             duration="30"
             intensity="Alta"
@@ -103,7 +105,7 @@ const Home = async () => {
           />
           <TrainingCard
             src="https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/body-combat-cover.webp"
-            alt="BODY COMBAT"
+            alt="BODY-COMBAT"
             title="BODY COMBAT"
             duration="30/45"
             intensity="Alta"
@@ -114,6 +116,7 @@ const Home = async () => {
         </div>
         <ButtonTrainingCard />
       </section>
+      {/* Section */}
 
       <section className="bg-#eda15a m-10 flex w-full flex-col items-center">
         {/* Title and description */}

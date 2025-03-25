@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 
-import { Button } from "@/app/Components/ui/button";
 import { Card, CardTitle } from "@/app/Components/ui/card";
+
+import { Button } from "../ui/button";
 
 interface TrainingCardProps {
   src: string;
@@ -60,9 +63,11 @@ const TrainingCard = ({
 
         {/* Botões no final do card */}
         <div className="mt-auto flex w-full justify-center gap-2">
-          <Button variant="ghost" className="mb-8 w-[48%] text-black">
-            Saiba mais
-          </Button>
+          <Link href={`/modalidades-treino/${alt}`}>
+            <Button variant="ghost" className="mb-8 w-[48%] text-black">
+              Saiba mais
+            </Button>
+          </Link>
         </div>
       </div>
     </Card>
