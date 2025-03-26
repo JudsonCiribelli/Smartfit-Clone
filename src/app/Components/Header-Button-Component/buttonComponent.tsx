@@ -4,15 +4,19 @@ import Link from "next/link";
 
 import { Button } from "@/app/Components/ui/button";
 
-interface ButtonComponentProps {
-  children: React.ReactNode;
-  href: string;
-}
-const ButtonComponent = ({ href, children }: ButtonComponentProps) => {
+const ButtonComponent = () => {
   return (
-    <Button className="gap-2 rounded-full" asChild>
-      <Link href={href}>{children}</Link>
-    </Button>
+    <>
+      <Button className="gap-4 rounded-full" asChild>
+        <Link href="/academias">Academias</Link>
+      </Button>
+      <Button className="gap-2 rounded-full" asChild>
+        <Link href="">Espaço do cliente</Link>
+      </Button>
+      <Button className="gap-2 rounded-full" asChild>
+        <Link href="">Seja um franqueador</Link>
+      </Button>
+    </>
   );
 };
 
