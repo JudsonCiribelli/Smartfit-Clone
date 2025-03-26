@@ -31,7 +31,7 @@ const HeaderComponent = () => {
           <Sheet>
             <SheetTrigger>
               <Button variant="ghost" asChild>
-                <AlignJustify size={80} />
+                <AlignJustify size={80} className="text-black" />
               </Button>
             </SheetTrigger>
             <SheetsContent />
