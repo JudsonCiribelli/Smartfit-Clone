@@ -24,7 +24,7 @@ const PlansCard = ({ plans }: PlansCardProps) => {
       {/* Div com as informações */}
       <CardHeader>
         <CardTitle>{plans.name}</CardTitle>
-        <CardDescription className="text-white">
+        <CardDescription className="mt-5 text-white">
           {plans.description}
         </CardDescription>
       </CardHeader>

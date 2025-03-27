@@ -5,10 +5,11 @@ import { getGyms } from "@/data/get-gyms";
 
 import { Input } from "../Components/ui/input";
 import CheckboxComponent from "./_Components/Checkbox-Component/checkboxComponent";
+import GymCard from "./_Components/Gym-Card-Component/gymCardComponent";
 
 const GymPage = async () => {
   const gyms = await getGyms();
-  console.log(gyms);
+
   return (
     <main className="mx-auto flex w-[100%] max-w-[1320px] flex-col px-3 py-5">
       <section className="mx-auto my-5 w-[95%] max-w-[1495px]">
@@ -39,7 +40,7 @@ const GymPage = async () => {
           833 unidades encontradas
         </p>
       </section>
-      <section className="flex-start flex w-[100%] justify-between gap-5">
+      <section className="flex w-[100%] items-start justify-between gap-8">
         <aside className="flex w-[100%] max-w-[258px] flex-shrink-0 flex-col">
           {/* Title and subtitle */}
           <div>
@@ -51,6 +52,11 @@ const GymPage = async () => {
             </div>
           </div>
         </aside>
+        <div className="flex-grow-1 flex w-[100%] items-start justify-start">
+          {gyms.map((gym) => (
+            <GymCard key={gym.id} gym={gym} />
+          ))}
+        </div>
       </section>
     </main>
   );
