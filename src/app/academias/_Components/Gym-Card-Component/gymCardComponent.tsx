@@ -35,7 +35,7 @@ const GymCard = ({ gym }: GymCardProps) => {
           </CardTitle>
           <p className="text-sm text-slate-500">{gym.address}</p>
           <Link
-            href="/"
+            href={`/academias/${gym.id}`}
             className="mt-4 flex text-start text-sm font-semibold text-blue-500 hover:underline"
           >
             Ver academia
