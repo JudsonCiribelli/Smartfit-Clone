@@ -61,9 +61,9 @@ model Gym {
   phone        String
   avatarImgUrl String
   coverImgUrl  String
+  images       String[]
   createdAt    DateTime      @default(now())
   updatedAt    DateTime      @updatedAt
-  images       GymImage[]
   appointments Appointment[]
 }
 
@@ -72,8 +72,6 @@ model GymImage {
   gymId     String
   imageUrl  String
   createdAt DateTime @default(now())
-
-  gym Gym @relation(fields: [gymId], references: [id], onDelete: Cascade)
 }
 
 model Workout {
