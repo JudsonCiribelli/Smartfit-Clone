@@ -218,6 +218,76 @@ const main = async () => {
           duration: 45,
           intensity: "Alta",
         },
+        {
+          name: "Smart Shape",
+          description:
+            "Nosso exclusivo circuito de emagrecimento, intenso e com duração de 30 minutos é uma combinação de vários exercícios.",
+          duration: 30,
+          intensity: "Alta",
+        },
+        {
+          name: "Smart Hit",
+          description:
+            "Um treino intervalado de alta intensidade que usa o peso do próprio corpo. Ideal pra quem busca resultados rápidos.",
+          duration: 30,
+          intensity: "Alta",
+        },
+        {
+          name: "Smart Strong",
+          description:
+            "O Smart Strong é um treino coletivo de hipertrofia, com foco em fortalecimento muscular, trabalho de força e resistência.",
+          duration: 45,
+          intensity: "Moderada-Alta",
+        },
+        {
+          name: "Zumba",
+          description:
+            "Adora remexer os quadris? Na Smart Fit, você tem aulas de Zumba com professores licenciados.",
+          duration: 60,
+          intensity: "Alta",
+        },
+        {
+          name: "Body Balance",
+          description:
+            "Inspirado na Yoga, com elementos do Tai Chi e do Pilates, é um treino com a função de melhorar não só o corpo, mas também a mente.",
+          duration: 30,
+          intensity: "Moderado",
+        },
+        {
+          name: "Smart Core",
+          description:
+            "Um treino intenso e eficiente, focado no condicionamento e força dos músculos abdominais, lombar e paravertebrais, ajudando na definição.",
+          duration: 30,
+          intensity: "Moderado",
+        },
+        {
+          name: "Alongamento",
+          description:
+            "Uma aula focada em exercícios de alongamento, flexibilidade e mobilidade articular, que alivia o stress e as dores do corpo.",
+          duration: 30,
+          intensity: "Baixa",
+        },
+        {
+          name: "Smart Fight",
+          description:
+            "O Smart Fight é um treino superlegal e diferente, ele mistura artes marciais com funcional e é ideal pra dar aquela variada no treino.",
+          duration: 45,
+          intensity: "Alta",
+        },
+        {
+          name: "Smart Bike",
+          description:
+            "Perfeita para quem busca uma explosão de energia e diversão durante o treino, a Smart Bike oferece a combinação perfeita de intensidade e entretenimento.",
+          duration: 45,
+          intensity: "Alta",
+        },
+        {
+          name: "Workou By FitDance",
+          description:
+            "Em busca de um treino que une movimento, diversão e queima calórica? O Workout foi desenvolvido pela FitDance exclusivamente para a Smart Fit, e é a opção ideal para quem busca uma experiência única, onde dança e condicionamento se encontram.",
+          duration: 30,
+          intensity: "Alta",
+        },
       ],
     });
   });
