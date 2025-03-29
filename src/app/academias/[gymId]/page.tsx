@@ -1,5 +1,18 @@
 import { Plan } from "@prisma/client";
-import { Clock10, Globe, MapPinned } from "lucide-react";
+import {
+  AirVent,
+  Armchair,
+  BicepsFlexed,
+  Blinds,
+  Car,
+  Clock10,
+  Dumbbell,
+  Globe,
+  HeartPulse,
+  MapPinned,
+  ShowerHead,
+  Weight,
+} from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
@@ -166,6 +179,79 @@ const GymDetails = async ({ params }: GymDetailsProps) => {
           {plans.map((plan) => (
             <PlansCard plans={plan} key={plan.id} />
           ))}
+        </div>
+        <p className="text-sm text-black">
+          Você será encaminhado(a) para o processo de escolha e contratação do
+          seu plano Smart Fit.
+        </p>
+      </section>
+      <section className="my-20 flex w-full flex-col items-center gap-2">
+        <div className="flex flex-col items-center justify-center gap-10 text-center">
+          {/* Areas */}
+          <h1 className="text-2xl font-bold text-black">Áreas</h1>
+          <div className="flex w-full items-center justify-center gap-10">
+            <div className="flex flex-col items-center justify-center">
+              <HeartPulse size={60} />
+              <h1 className="text-sm text-black">Cardio</h1>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <Armchair size={60} />
+              <h1 className="text-sm text-black">Cadeira de Massagem</h1>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <Dumbbell size={60} />
+              <h1 className="text-sm text-black">Peso Livre</h1>
+            </div>
+            <div className="flex flex-col items-center justify-center">
+              <BicepsFlexed size={60} />
+              <h1 className="text-sm text-black">Musculação</h1>
+            </div>
+          </div>
+          {/* Estruturas */}
+
+          <div className="my-8 flex flex-col">
+            <h1 className="text-2xl font-bold text-black">Estrutura</h1>
+            <div className="my-4 flex w-full items-center justify-center gap-10">
+              <div className="flex flex-col items-center justify-center">
+                <Blinds size={60} />
+                <h1 className="text-sm text-black">Armário rotativo</h1>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <ShowerHead size={60} />
+                <h1 className="text-sm text-black">Ducha aquecida</h1>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <Dumbbell size={60} />
+                <h1 className="text-sm text-black">Professores formados</h1>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <Car size={60} />
+                <h1 className="text-sm text-black">Estacionamento</h1>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <AirVent size={60} />
+                <h1 className="text-sm text-black">Ar condicionado</h1>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <Weight size={60} />
+                <h1 className="text-sm text-black">Balança de Bioimpedância</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="my-10 flex h-[140px] w-full flex-col items-center gap-2 bg-amber-100">
+        <div className="flex flex-col justify-center text-start">
+          <div className="mt-8">
+            {" "}
+            <h1 className="my-2 text-4xl text-black">
+              Se ficar com dúvida, a gente te ajuda!︎
+            </h1>
+            <p className="text-sm text-black">
+              Todos os nossos equipamentos possuem o botão Smart Help, que
+              solicita ajuda de um professor quando acionado.
+            </p>
+          </div>
         </div>
       </section>
     </main>
