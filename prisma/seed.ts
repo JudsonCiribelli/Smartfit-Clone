@@ -203,6 +203,8 @@ const main = async () => {
             "Para você manjar de todos os passinhos, as aulas de dança da Smart Fit são ministradas por professores licenciados pelo FitDance.",
           duration: 60,
           intensity: "Alta",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/fitdance/cover.png",
         },
         {
           name: "Smart Cross",
@@ -210,6 +212,8 @@ const main = async () => {
             "Emagrecimento com ganho de condicionamento físico em apenas 30 minutos. Esse é o Smart Cross, nosso treino funcional coletivo de alta intensidade.",
           duration: 30,
           intensity: "Média",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/smart-cross/cover.png",
         },
         {
           name: "Body Combat",
@@ -217,6 +221,8 @@ const main = async () => {
             "Karatê, Jiu-Jitsu, Capoeira, Kung Fu e Taekwondo são algumas das inspirações para a aula de BodyCombat. Esse treino trabalha todo o corpo.",
           duration: 45,
           intensity: "Alta",
+          imageUrl:
+            "https://assets3.smartfit.com.br/assets/new-home-v4-assets/aulas/body-combat-cover.webp",
         },
         {
           name: "Smart Shape",
@@ -224,6 +230,8 @@ const main = async () => {
             "Nosso exclusivo circuito de emagrecimento, intenso e com duração de 30 minutos é uma combinação de vários exercícios.",
           duration: 30,
           intensity: "Alta",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/smart-shape/cover.png",
         },
         {
           name: "Smart Hit",
@@ -231,6 +239,8 @@ const main = async () => {
             "Um treino intervalado de alta intensidade que usa o peso do próprio corpo. Ideal pra quem busca resultados rápidos.",
           duration: 30,
           intensity: "Alta",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/smart-hit/cover.png",
         },
         {
           name: "Smart Strong",
@@ -238,6 +248,8 @@ const main = async () => {
             "O Smart Strong é um treino coletivo de hipertrofia, com foco em fortalecimento muscular, trabalho de força e resistência.",
           duration: 45,
           intensity: "Moderada-Alta",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/smart-strong/cover.png",
         },
         {
           name: "Zumba",
@@ -245,6 +257,8 @@ const main = async () => {
             "Adora remexer os quadris? Na Smart Fit, você tem aulas de Zumba com professores licenciados.",
           duration: 60,
           intensity: "Alta",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/zumba/cover.png",
         },
         {
           name: "Body Balance",
@@ -252,6 +266,8 @@ const main = async () => {
             "Inspirado na Yoga, com elementos do Tai Chi e do Pilates, é um treino com a função de melhorar não só o corpo, mas também a mente.",
           duration: 30,
           intensity: "Moderado",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/body-balance/cover.png",
         },
         {
           name: "Smart Core",
@@ -259,6 +275,8 @@ const main = async () => {
             "Um treino intenso e eficiente, focado no condicionamento e força dos músculos abdominais, lombar e paravertebrais, ajudando na definição.",
           duration: 30,
           intensity: "Moderado",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/abdominal/cover.png",
         },
         {
           name: "Alongamento",
@@ -266,6 +284,8 @@ const main = async () => {
             "Uma aula focada em exercícios de alongamento, flexibilidade e mobilidade articular, que alivia o stress e as dores do corpo.",
           duration: 30,
           intensity: "Baixa",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/alongamento/cover.png",
         },
         {
           name: "Smart Fight",
@@ -273,6 +293,8 @@ const main = async () => {
             "O Smart Fight é um treino superlegal e diferente, ele mistura artes marciais com funcional e é ideal pra dar aquela variada no treino.",
           duration: 45,
           intensity: "Alta",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/smart-fight/cover.png",
         },
         {
           name: "Smart Bike",
@@ -280,6 +302,8 @@ const main = async () => {
             "Perfeita para quem busca uma explosão de energia e diversão durante o treino, a Smart Bike oferece a combinação perfeita de intensidade e entretenimento.",
           duration: 45,
           intensity: "Alta",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/smart-bike/cover.png",
         },
         {
           name: "Workou By FitDance",
@@ -287,6 +311,8 @@ const main = async () => {
             "Em busca de um treino que une movimento, diversão e queima calórica? O Workout foi desenvolvido pela FitDance exclusivamente para a Smart Fit, e é a opção ideal para quem busca uma experiência única, onde dança e condicionamento se encontram.",
           duration: 30,
           intensity: "Alta",
+          imageUrl:
+            "https://landing-pages-smart.s3.amazonaws.com/modalidades-treinos/pt-BR/workout-by-fitdance/cover.png",
         },
       ],
     });
