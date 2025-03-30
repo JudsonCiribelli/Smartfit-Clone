@@ -78,6 +78,7 @@ model Workout {
   id           String        @id @default(uuid())
   name         String
   description  String
+  imageUrl     String?
   intensity    String        @default("Moderada")
   duration     Int
   createdAt    DateTime      @default(now())
