@@ -254,6 +254,81 @@ const GymDetails = async ({ params }: GymDetailsProps) => {
           </div>
         </div>
       </section>
+
+      <section className="m-8 flex w-full flex-col items-center gap-2">
+        {/* Title */}
+        <div className="flex flex-col items-center gap-6 text-center">
+          <h1 className="text-4xl font-semibold text-black">
+            Conheça
+            <span className="text-4xl font-semibold text-foreground">
+              {" "}
+              a equipe
+            </span>
+          </h1>
+          <p className="text-sm text-black">
+            É bom contar com essa galera para tirar dúvidas, treinar pra valer,
+            bater um papinho... <br />
+            Identifique o pessoal pela cor da camiseta!
+          </p>
+        </div>
+        {/* Camisas */}
+        <div className="my-4 flex items-center justify-center gap-20">
+          <div className="flex flex-col">
+            <Image
+              src="https://assets3.smartfit.com.br/assets/locations-page-v4/recepcionista.png"
+              alt="recepcionista"
+              width={240}
+              height={241}
+            />
+            <div className="my-4 flex flex-col gap-2 text-center">
+              <h1 className="text-lg text-black">Recepcionista</h1>
+              <p className="text-sm text-black">
+                Dúvidas sobre a operação da
+                <br /> academia? Traga pro balcão!
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <Image
+              src="https://assets3.smartfit.com.br/assets/locations-page-v4/professores.png"
+              alt="recepcionista"
+              width={240}
+              height={241}
+            />
+            <div className="my-4 flex flex-col gap-2 text-center">
+              <h1 className="text-lg text-black">Professores</h1>
+              <p className="text-sm text-black">
+                Ele sabe tudo sobre exercício, monta
+                <br /> treino, dá aula coletiva e te ajuda a <br /> conquistar
+                seus objetivos.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <Image
+              src="https://assets3.smartfit.com.br/assets/locations-page-v4/lider.png"
+              alt="recepcionista"
+              width={240}
+              height={241}
+            />
+            <div className="my-4 flex flex-col gap-2 text-center">
+              <h1 className="text-lg text-black">Líder de Unidade</h1>
+              <p className="text-sm text-black">
+                É a pessoa responsável pelo bom <br /> funcionamento da unidade
+                está
+                <br />
+                sempre disponível para ajudar!
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Botao */}
+        <div>
+          <Button className="w-[400px] rounded-full p-6">
+            Quero treinar aqui!
+          </Button>
+        </div>
+      </section>
     </main>
   );
 };
