@@ -1,5 +1,6 @@
 import { Plan } from "@prisma/client";
 import { CircleCheck, CircleX } from "lucide-react";
+import Link from "next/link";
 
 import { Button } from "@/app/Components/ui/button";
 import {
@@ -37,7 +38,9 @@ const PlansCard = ({ plans }: PlansCardProps) => {
         <p className="text-sm text-slate-400">
           {plans.duration} meses de fidelidade
         </p>
-        <Button className="my-6 w-full">Contratar agora</Button>
+        <Button className="my-6 w-full" asChild>
+          <Link href="/academias">Contratar agora</Link>
+        </Button>
         <ul className="mt-4 space-y-2 text-white">
           {isBlackPlan ? (
             plans.additionalInfo.map((info, index) => (
