@@ -13,12 +13,16 @@ interface TrainingCardProps {
 }
 
 const TrainingCard = ({ workout }: TrainingCardProps) => {
+  if (!workout) {
+    return <div>Workout not found</div>;
+  }
+  const imageUrl = workout.imageUrl || "/path/to/default-image.jpg";
   return (
     <Card className="flex h-[500px] w-[283px] flex-col border-none bg-white shadow-xl">
       {/* Ajuste de largura e altura da imagem */}
       <div className="h-[166px] w-full">
         <Image
-          src={workout.imageUrl}
+          src={imageUrl}
           alt={workout.name}
           width={283}
           height={166}
