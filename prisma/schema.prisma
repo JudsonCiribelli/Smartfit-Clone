@@ -85,6 +85,7 @@ model Workout {
   benefits       String? // Razões para fazer o treino
   trainingMethod String? // Como é o treino (detalhes do método de treino)
   objective      String?
+  coverImgUrl    String?
   createdAt      DateTime      @default(now())
   appointments   Appointment[]
 }
