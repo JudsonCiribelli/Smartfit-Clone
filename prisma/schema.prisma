@@ -75,14 +75,18 @@ model GymImage {
 }
 
 model Workout {
-  id           String        @id @default(uuid())
-  name         String
-  description  String
-  imageUrl     String?
-  intensity    String        @default("Moderada")
-  duration     Int
-  createdAt    DateTime      @default(now())
-  appointments Appointment[]
+  id             String        @id @default(uuid())
+  name           String
+  description    String
+  imageUrl       String?
+  intensity      String        @default("Moderada")
+  duration       Int
+  overview       String? // Explicação detalhada sobre o treino
+  benefits       String? // Razões para fazer o treino
+  trainingMethod String? // Como é o treino (detalhes do método de treino)
+  objective      String?
+  createdAt      DateTime      @default(now())
+  appointments   Appointment[]
 }
 
 model Appointment {
