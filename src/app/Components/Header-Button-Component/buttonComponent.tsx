@@ -14,7 +14,7 @@ const ButtonComponent = () => {
         <Link href="">Espaço do cliente</Link>
       </Button>
       <Button className="gap-2 rounded-full" asChild>
-        <Link href="">Seja um franqueador</Link>
+        <Link href="/franqueador">Seja um franqueador</Link>
       </Button>
     </>
   );
