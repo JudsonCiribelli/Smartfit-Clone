@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import ExperienceCard from "../Components/Experience-Card-Component/experienceCard";
 import { Button } from "../Components/ui/button";
 
 const FranchisorPage = () => {
@@ -105,7 +106,106 @@ const FranchisorPage = () => {
           </Button>
         </div>
       </section>
-      <section className="w-full"></section>
+      <section className="my-14 w-full">
+        <div className="flex flex-col items-center justify-center gap-10 text-center">
+          {/* titulo */}
+          <div className="flex flex-col gap-2">
+            <h1 className="text-4xl font-semibold text-black">
+              Empreenda com{" "}
+              <span className="text-foreground">
+                a força da marca Smart Fit
+              </span>
+            </h1>
+            <p className="text-lg font-normal text-black">
+              Visando o nosso maior propósito de democratizar o fitness de alto
+              padrão nossas academias contam com o melhor que há no mercado com
+              <br />
+              um preço acessível.
+            </p>
+          </div>
+          {/* banners */}
+          <div className="flex gap-4">
+            <ExperienceCard
+              src="https://assets.smartfit.com.br/images/new_home_br/equipamentos_alto_padrao.jpeg"
+              content="Equipamentos de alto padrão"
+            />
+            <ExperienceCard
+              src="https://assets.smartfit.com.br/images/new_home_br/salas-exclusivas.jpeg"
+              content="Salas exclusivas de aulas coletivas"
+            />
+            <ExperienceCard
+              src="https://assets.smartfit.com.br/images/new_home_br/areas-musculacao.jpeg"
+              content="Áreas de musculação e cárdio"
+            />
+          </div>
+          <Button className="w-[300px] rounded-full p-6">
+            Quero ser um franqueador
+          </Button>
+        </div>
+      </section>
+      <section className="w-full">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="my-6 text-4xl font-semibold text-black">
+            Conheça <span className="text-foreground">o nosso mercado!</span>
+          </h1>
+          <div className="flex gap-10">
+            <Image
+              src="https://d9hhrg4mnvzow.cloudfront.net/promocao.smartfit.com.br/quero-ser-um-franqueado/d5c79a4c-frame-3264_10ja0c8000000000000028.png"
+              alt="grapchis image"
+              width={700}
+              height={450}
+            />
+            <div className="flex flex-col gap-8">
+              <div className="flex items-center justify-start gap-2">
+                <Image
+                  src="https://d9hhrg4mnvzow.cloudfront.net/promocao.smartfit.com.br/quero-ser-um-franqueado/bc107461-frame-3298_1000000000000000000028.png"
+                  alt="Image icon"
+                  width={52}
+                  height={38}
+                />
+                <p className="text-lg text-black">
+                  O mercado fitness cresce média de 8,7% anualmente no mundo
+                </p>
+              </div>
+              <div className="flex items-center justify-start gap-2">
+                <Image
+                  src="https://d9hhrg4mnvzow.cloudfront.net/promocao.smartfit.com.br/quero-ser-um-franqueado/bc107461-frame-3298_1000000000000000000028.png"
+                  alt="Image icon"
+                  width={52}
+                  height={38}
+                />
+                <p className="text-lg text-black">
+                  Brasil é o 2º segundo maior país no ranking mundial
+                </p>
+              </div>
+              <div className="flex items-center justify-start gap-2">
+                <Image
+                  src="https://d9hhrg4mnvzow.cloudfront.net/promocao.smartfit.com.br/quero-ser-um-franqueado/bc107461-frame-3298_1000000000000000000028.png"
+                  alt="Image icon"
+                  width={52}
+                  height={38}
+                />
+                <p className="text-lg text-black">
+                  O setor movimentou + de U$2 bilhões de dólares no país <br />e
+                  ocupa 3º posição no ranking de faturamento do mundo
+                </p>
+              </div>
+              <div className="flex items-center justify-start gap-2">
+                <Image
+                  src="https://d9hhrg4mnvzow.cloudfront.net/promocao.smartfit.com.br/quero-ser-um-franqueado/bc107461-frame-3298_1000000000000000000028.png"
+                  alt="Image icon"
+                  width={52}
+                  height={38}
+                />
+                <p className="text-lg text-black">
+                  As academias representam 60% do faturamento total do <br />
+                  setor no país
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
