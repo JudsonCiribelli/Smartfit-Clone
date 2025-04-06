@@ -1,7 +1,9 @@
 import Image from "next/image";
 
+import { Label } from "../../../@app/Components/ui/label";
 import ExperienceCard from "../Components/Experience-Card-Component/experienceCard";
 import { Button } from "../Components/ui/button";
+import { Input } from "../Components/ui/input";
 
 const FranchisorPage = () => {
   return (
@@ -202,6 +204,56 @@ const FranchisorPage = () => {
                   setor no país
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="my-10 w-full">
+        <div className="flex flex-col items-center justify-center gap-2 text-center">
+          <div className="m-10">
+            <h1 className="text-4xl font-semibold text-black">
+              Quero ser <span className="text-foreground">um franqueado!</span>
+            </h1>
+            <p className="text-lg font-normal text-black">
+              Preencha o formulário abaixo para que a gente possa avaliar o seu
+              perfil! Aproveite e inclua <br />
+              até três sócios pra embarcar nessa com você!
+            </p>
+          </div>
+          <div className="flex w-[100%] max-w-[850px] flex-wrap items-center justify-center gap-4">
+            <div className="flex flex-col items-start gap-1">
+              <Label className="text-lg font-normal text-black">Nome*</Label>
+              <Input
+                type="text"
+                placeholder="Seu nome"
+                className="w-[400px] text-black"
+              />
+            </div>
+            <div className="flex flex-col items-start gap-1">
+              <Label className="text-lg font-normal text-black">
+                Telefone*
+              </Label>
+              <Input
+                type="text"
+                placeholder="DDD + 9 9999-9999"
+                className="w-[400px] text-black"
+              />
+            </div>
+            <div className="flex flex-col items-start gap-1">
+              <Label className="text-lg font-normal text-black">Email*</Label>
+              <Input
+                type="email"
+                placeholder="Seu nome"
+                className="w-[400px] text-black"
+              />
+            </div>
+            <div className="flex flex-col items-start gap-1">
+              <Label className="text-lg font-normal text-black">Nome*</Label>
+              <Input
+                type="text"
+                placeholder="Seu nome"
+                className="w-[400px] text-black"
+              />
             </div>
           </div>
         </div>
